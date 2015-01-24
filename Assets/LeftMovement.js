@@ -5,16 +5,17 @@ function Start () {
 }
 
 var speed = 50;
+var r = GetComponent(Rigidbody2D);
 
 function Update () {
 
 	var horizontal = Input.GetAxis("LHorizontal");
-	if(Mathf.Abs(horizontal) > 0.9){
-		rigidbody.velocity.x = horizontal * speed;
+	if(Mathf.Abs(horizontal) > 0.99){
+		r.velocity.x = horizontal * speed;
 	}
 	var vertical = Input.GetAxis("LVertical");
-	if(Mathf.Abs(vertical) > 0.9){
-		rigidbody.velocity.y = vertical * speed;
+	if(Mathf.Abs(vertical) > 0.99){
+		r.velocity.y = vertical * speed;
 	}
 	transform.position.y = Mathf.Clamp(transform.position.y, -6, 8);
 	transform.position.x = Mathf.Clamp(transform.position.x, -21, -9);
