@@ -46,7 +46,12 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Movement.js" />
+     <Compile Include="Assets\LeftMovement.js" />
+     <Compile Include="Assets\QuitMouseOver.js" />
+     <Compile Include="Assets\RightMovement.js" />
+     <Compile Include="Assets\StartMouseOver.js" />
+     <Compile Include="Assets\scroll.js" />
+     <Compile Include="Assets\scroll2.js" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
