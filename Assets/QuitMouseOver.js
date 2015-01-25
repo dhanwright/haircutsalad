@@ -16,6 +16,7 @@ function OnTriggerEnter2D(){
 
   //then make it visible
   newSprite.renderer.enabled = true;
+  
 }
 
 function OnTriggerExit2D(){
