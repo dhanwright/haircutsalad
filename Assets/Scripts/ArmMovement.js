@@ -7,7 +7,7 @@ var depth_in_input   = "rbButton";
 var depth_out_input  = "rTrigger";
 var y_clamp          = new Vector2(-6, 8);
 var x_clamp          = new Vector2(9, 21);
-var z_clamp          = new Vector2(-4, 1.2);
+var z_clamp          = new Vector2(-8, 2);
 var isBuzzing        = false;
 var x_start          : float;
 
