@@ -29,6 +29,8 @@ function generateFlatTop() {
     var y_end = 6;
     var y_increment = (hairPiece.transform.lossyScale.y*0.8);
 
+    var numberOfHairs:int = 0;
+
     for (var y = y_start; y < y_end; y += y_increment) {
         for (var radius = radius_start; radius > 0; radius -= radius_increment) {
             var no = numberOfObjects*radius;
@@ -40,9 +42,11 @@ function generateFlatTop() {
                 hp.transform.parent = transform;
                 hp.transform.position = pos;
                 hp.transform.position.y = y;
+                numberOfHairs++;
             }
         }
     }
+    setCounts(numberOfHairs);
 }
 
 function generateMohawk() {
