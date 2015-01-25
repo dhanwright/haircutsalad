@@ -1,6 +1,10 @@
 ﻿#pragma strict
 
+static var hairCount:int;
+static var startHairCount:int;
+
 function Start () {
+    hairCount = 0;
     generateFlatTop();
 }
 
@@ -20,6 +24,8 @@ function generateFlatTop() {
     var angle_end   = (5*Mathf.PI) / 6;
     var angle_increment = getIncrement(angle_start, angle_end, numberOfObjects);
 
+    var numberOfHairs:int = 0;
+
     for (var layer = 1; layer <= numberOfLayers; layer++) {
         var radius = (layer * radius_increment) + radius_start;
 
@@ -32,11 +38,18 @@ function generateFlatTop() {
                 hp.transform.parent = transform;
                 hp.transform.position = pos;
                 hp.transform.position.x = x * hp.transform.lossyScale.x;
+                numberOfHairs++;
             }
         }
     }
+    setCounts(numberOfHairs);
 }
 
 function getIncrement(start : float, end : float, number_of_increments : float) {
     return (end - start) / number_of_increments;
+}
+
+function setCounts(hairs:int) {
+    Head.hairCount = hairs;
+    Head.startHairCount = hairs;
 }

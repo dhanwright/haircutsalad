@@ -6,6 +6,7 @@ private var _isCustomerEntering = false;
 private var _customerStartTime:float;
 private var _customerStartPos:Transform;
 private var _customer:GameObject;
+private var _startingHairCount:int;
 
 var customerSeatedPos:Transform;
 var distanceToSeat:float = 18;
@@ -15,6 +16,12 @@ var customerEntranceSpeed = 5.0;
 
 function Start () {
   //newCustomer();
+  _customer = GameObject("Head");  //temp
+  _startingHairCount = Head.hairCount;
+
+  Debug.Log(Head.hairCount);
+
+
 
 }
 
