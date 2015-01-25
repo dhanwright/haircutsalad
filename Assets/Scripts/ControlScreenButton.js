@@ -18,7 +18,7 @@ function OnTriggerEnter2D(){
 
   //then make it visible
   newSprite.renderer.enabled = true;
-  
+
   isOverButton = true;
 }
 
@@ -32,6 +32,5 @@ function OnTriggerExit2D(){
 function Update(){
 	if (Controller.getInput("aButton") && isOverButton){
   		Application.LoadLevel ("dothedoodoodoo");
-      GameTime.cuttingHair = false;
-  		}
-  	}
+	}
+}
