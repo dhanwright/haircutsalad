@@ -30,7 +30,7 @@ function OnTriggerExit2D(){
 }
 
 function Update(){
-	if (Input.GetButton("A") && isOverButton){
+	if (Controller.getInput("aButton") && isOverButton){
   		Application.LoadLevel ("controls");
   		}
   	}
