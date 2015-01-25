@@ -1,6 +1,10 @@
 ﻿#pragma strict
 
+static var hairCount:int;
+static var startHairCount:int;
+
 function Start () {
+
     var rand = Random.Range(0,100);
 
     if (rand < 50) {
@@ -26,6 +30,8 @@ function generateFlatTop() {
     var y_end = 6;
     var y_increment = (hairPiece.transform.lossyScale.y*0.8);
 
+    var numberOfHairs:int = 0;
+
     for (var y = y_start; y < y_end; y += y_increment) {
         for (var radius = radius_start; radius > 0; radius -= radius_increment) {
             var no = numberOfObjects*radius;
@@ -37,9 +43,11 @@ function generateFlatTop() {
                 hp.transform.parent = transform;
                 hp.transform.position = pos;
                 hp.transform.position.y = y;
+                numberOfHairs++;
             }
         }
     }
+    setCounts(numberOfHairs);
 }
 
 function generateMohawk() {
@@ -51,6 +59,8 @@ function generateMohawk() {
     var angle_start = Mathf.PI / 6;
     var angle_end   = (5*Mathf.PI) / 6;
     var angle_increment = getIncrement(angle_start, angle_end, numberOfObjects);
+
+    var numberOfHairs:int = 0;
 
     for (var layer = 1; layer <= numberOfLayers; layer++) {
         var radius = (layer * radius_increment) + radius_start;
@@ -64,11 +74,18 @@ function generateMohawk() {
                 hp.transform.parent = transform;
                 hp.transform.position = pos;
                 hp.transform.position.x = x * hp.transform.lossyScale.x;
+                numberOfHairs++;
             }
         }
     }
+    setCounts(numberOfHairs);
 }
 
 function getIncrement(start : float, end : float, number_of_increments : float) {
     return (end - start) / number_of_increments;
+}
+
+function setCounts(hairs:int) {
+    Head.hairCount = hairs;
+    Head.startHairCount = hairs;
 }
