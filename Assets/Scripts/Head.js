@@ -8,6 +8,8 @@ function Start () {
     } else {
         generateFlatTop();
     }
+
+    transform.position.y = -1.7;
 }
 
 function Update () {
