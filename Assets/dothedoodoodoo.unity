@@ -280,7 +280,7 @@ MonoBehaviour:
   depth_in_input: rTrigger
   depth_out_input: rbButton
   y_clamp: {x: -6, y: 8}
-  x_clamp: {x: 9, y: 21}
+  x_clamp: {x: -21, y: -9}
   z_clamp: {x: -4, y: 1.20000005}
 --- !u!23 &767936217
 Renderer:
