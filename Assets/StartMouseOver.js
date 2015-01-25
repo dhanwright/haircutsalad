@@ -2,8 +2,10 @@
 
 var newSprite : GameObject;
 var currentSpritePosition : Vector3;
+var isOverButton = false;
 
-function OnMouseEnter(){
+
+function OnTriggerEnter2D(){
 
   //getting the current position of the current sprite if ever it can move;
   var currentSpritePosition = transform.position;
@@ -16,10 +18,19 @@ function OnMouseEnter(){
 
   //then make it visible
   newSprite.renderer.enabled = true;
+  
+  isOverButton = true;
 }
 
-function OnMouseExit(){
+function OnTriggerExit2D(){
   //just the reverse process
   renderer.enabled = true;
   newSprite.renderer.enabled = false;
+  isOverButton = false;
 }
+
+function Update(){
+	if (Input.GetButton("A") && isOverButton){
+  		Application.LoadLevel ("controls");
+  		}
+  	}
