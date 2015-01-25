@@ -1,0 +1,126 @@
+fileFormatVersion: 2
+guid: 1dda7f4ec8d66164f942889b180696d4
+ModelImporter:
+  serializedVersion: 15
+  fileIDToRecycleName:
+    100000: Arm_01_Mesh:pCube2
+    100002: Arm_Base
+    100004: Arm_Elbow
+    100006: //RootNode
+    100008: Arm_Wrist
+    100010: group1
+    100012: Hand_Master
+    100014: Index_Joint1
+    100016: Index_Joint2
+    100018: Index_Joint3
+    100020: Index_Joint4
+    100022: Middle_Joint1
+    100024: Middle_Joint2
+    100026: Middle_Joint3
+    100028: Middle_Joint4
+    100030: pCube2
+    100032: Pinky_Joint1
+    100034: Pinky_Joint2
+    100036: Pinky_Joint3
+    100038: Pinky_Joint4
+    100040: Ring_Joint1
+    100042: Ring_Joint2
+    100044: Ring_Joint3
+    100046: Ring_Joint4
+    100048: Scissors_01:polySurface1
+    100050: Scissors_01:polySurface2
+    100052: Thumb_Joint1
+    100054: Thumb_Joint2
+    100056: Thumb_Joint3
+    100058: Thumb_Master
+    400000: Arm_01_Mesh:pCube2
+    400002: Arm_Base
+    400004: Arm_Elbow
+    400006: //RootNode
+    400008: Arm_Wrist
+    400010: group1
+    400012: Hand_Master
+    400014: Index_Joint1
+    400016: Index_Joint2
+    400018: Index_Joint3
+    400020: Index_Joint4
+    400022: Middle_Joint1
+    400024: Middle_Joint2
+    400026: Middle_Joint3
+    400028: Middle_Joint4
+    400030: pCube2
+    400032: Pinky_Joint1
+    400034: Pinky_Joint2
+    400036: Pinky_Joint3
+    400038: Pinky_Joint4
+    400040: Ring_Joint1
+    400042: Ring_Joint2
+    400044: Ring_Joint3
+    400046: Ring_Joint4
+    400048: Scissors_01:polySurface1
+    400050: Scissors_01:polySurface2
+    400052: Thumb_Joint1
+    400054: Thumb_Joint2
+    400056: Thumb_Joint3
+    400058: Thumb_Master
+    2300000: Scissors_01:polySurface1
+    2300002: Scissors_01:polySurface2
+    3300000: Scissors_01:polySurface1
+    3300002: Scissors_01:polySurface2
+    4300000: pCube2
+    4300002: Scissors_01:polySurface1
+    4300004: Scissors_01:polySurface2
+    9500000: //RootNode
+    13700000: pCube2
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    handles: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  additionalBone: 1
+  animationType: 2
+  userData: 
