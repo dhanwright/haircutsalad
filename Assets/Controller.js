@@ -69,8 +69,8 @@ static var mac = {
     "rTrigger" : "Axis6"
 },
 "button": {
-    "aButton" :"Butto16",
-    "bButton" : "Butto17",
+    "aButton" :"Button16",
+    "bButton" : "Button17",
     "xButton" : "Button18",
     "yButton" :"Button19",
     "startButton" : "Button9",
