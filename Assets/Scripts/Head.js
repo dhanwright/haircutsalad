@@ -27,7 +27,7 @@ function generateFlatTop() {
     var radius_start = 1.7;
     var radius_increment = hairPiece.transform.lossyScale.y;
     var y_start = 3.4;
-    var y_end = 6;
+    var y_end = 9;
     var y_increment = (hairPiece.transform.lossyScale.y*0.8);
 
     var numberOfHairs:int = 0;
@@ -55,7 +55,7 @@ function generateMohawk() {
     var radius_start = 4;
     var radius_increment = hairPiece.transform.lossyScale.x;
 
-    var numberOfObjects = 15;
+    var numberOfObjects = 25;
     var angle_start = Mathf.PI / 6;
     var angle_end   = (5*Mathf.PI) / 6;
     var angle_increment = getIncrement(angle_start, angle_end, numberOfObjects);
