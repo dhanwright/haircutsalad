@@ -9,6 +9,10 @@ var y_clamp          = new Vector2(-6, 8);
 var x_clamp          = new Vector2(9, 21);
 var z_clamp          = new Vector2(-4, 1.2);
 
+function Start () {
+	transform.position.y = 0;
+}
+
 function Update () {
     if(GameTime.cuttingHair)
     {
@@ -24,15 +28,15 @@ function Update () {
             rigidbody.velocity.y = -vertical * speed;
         }
 
-        // Move in and out
-        var depth_out = Controller.getInput(depth_out_input);
-        if (depth_out > 0) {
-            rigidbody.AddRelativeForce(Vector3.forward * speed * 1000);
-        }
-        var depth_in = Controller.getInput(depth_in_input);
-        if (depth_in) {
-            rigidbody.AddRelativeForce(Vector3.back * speed * 1000);
-        }
+    // Move in and out
+    var depth_out = Controller.getInput(depth_out_input);
+    if (depth_out > 0) {
+        rigidbody.AddForce(Vector3(0, 0, 1) * speed * 1000);
+    }
+    var depth_in = Controller.getInput(depth_in_input);
+    if (depth_in) {
+        rigidbody.AddForce(Vector3(0, 0, -1) * speed * 1000);
+    }
 
         transform.position.y = Mathf.Clamp(transform.position.y, y_clamp.x, y_clamp.y);
         transform.position.x = Mathf.Clamp(transform.position.x, x_clamp.x, x_clamp.y);

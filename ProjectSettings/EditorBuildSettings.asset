@@ -6,6 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/dothedoodoodoo.unity
+    path: Assets/Scenes/dothedoodoodoo.unity
   - enabled: 1
-    path: Assets/controls.unity
+    path: Assets/Scenes/controls.unity
