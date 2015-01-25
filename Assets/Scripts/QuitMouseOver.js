@@ -17,6 +17,8 @@ function OnTriggerEnter2D(){
   //then make it visible
   newSprite.renderer.enabled = true;
   
+  var audio = GetComponent(AudioSource);
+  audio.Play();
 }
 
 function OnTriggerExit2D(){

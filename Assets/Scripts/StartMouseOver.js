@@ -20,6 +20,9 @@ function OnTriggerEnter2D(){
   newSprite.renderer.enabled = true;
   
   isOverButton = true;
+  
+  var audio = GetComponent(AudioSource);
+  audio.Play();
 }
 
 function OnTriggerExit2D(){

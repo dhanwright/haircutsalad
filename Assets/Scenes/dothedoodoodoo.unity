@@ -310,6 +310,8 @@ MonoBehaviour:
   y_clamp: {x: -6, y: 8}
   x_clamp: {x: 8, y: 21}
   z_clamp: {x: -4, y: 1.20000005}
+  isBuzzing: 0
+  x_start: 0
 --- !u!54 &306865287
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -428,7 +430,9 @@ MonoBehaviour:
   depth_out_input: lTrigger
   y_clamp: {x: -6, y: 7}
   x_clamp: {x: -11, y: -6}
-  z_clamp: {x: -9, y: -1}
+  z_clamp: {x: -9, y: -2}
+  isBuzzing: 0
+  x_start: -8
 --- !u!54 &313133538
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -478,6 +482,7 @@ GameObject:
   - 33: {fileID: 362603027}
   - 23: {fileID: 362603026}
   - 64: {fileID: 362603025}
+  - 114: {fileID: 362603028}
   m_Layer: 0
   m_Name: Buzzer4 Collider
   m_TagString: Untagged
@@ -539,6 +544,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 135164946}
   m_GameObject: {fileID: 362603023}
   m_Mesh: {fileID: 4300008, guid: 660e166dada3f4f119bf78e5d2e92cae, type: 3}
+--- !u!114 &362603028
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 362603023}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3be7de712c5b440c9a571d90887cc51a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isBuzzing: 0
 --- !u!1 &405870907
 GameObject:
   m_ObjectHideFlags: 0
@@ -685,6 +702,7 @@ GameObject:
   - 33: {fileID: 504046940}
   - 23: {fileID: 504046939}
   - 64: {fileID: 504046938}
+  - 114: {fileID: 504046941}
   m_Layer: 0
   m_Name: Buzzer5 Collider
   m_TagString: Untagged
@@ -746,6 +764,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 135164946}
   m_GameObject: {fileID: 504046936}
   m_Mesh: {fileID: 4300010, guid: 660e166dada3f4f119bf78e5d2e92cae, type: 3}
+--- !u!114 &504046941
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 504046936}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3be7de712c5b440c9a571d90887cc51a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isBuzzing: 0
 --- !u!1 &533790771
 GameObject:
   m_ObjectHideFlags: 0
@@ -831,6 +861,7 @@ GameObject:
   - 23: {fileID: 616371176}
   - 114: {fileID: 616371175}
   - 54: {fileID: 616371174}
+  - 114: {fileID: 616371180}
   m_Layer: 0
   m_Name: HairPiece
   m_TagString: Untagged
@@ -921,6 +952,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 8
+--- !u!114 &616371180
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 616371173}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3be7de712c5b440c9a571d90887cc51a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isBuzzing: 0
 --- !u!1 &689299100
 GameObject:
   m_ObjectHideFlags: 0
@@ -993,6 +1036,45 @@ MeshFilter:
   m_PrefabInternal: {fileID: 135164946}
   m_GameObject: {fileID: 689299100}
   m_Mesh: {fileID: 4300000, guid: 660e166dada3f4f119bf78e5d2e92cae, type: 3}
+--- !u!1 &692459418
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 692459420}
+  - 114: {fileID: 692459419}
+  m_Layer: 0
+  m_Name: DoneCutting
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &692459419
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 692459418}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e15aa765c965147a48488f645dec60c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &692459420
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 692459418}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .60234499, y: 1.6864742, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
 --- !u!1 &767936215
 GameObject:
   m_ObjectHideFlags: 0
@@ -1032,6 +1114,8 @@ MonoBehaviour:
   y_clamp: {x: -6, y: 8}
   x_clamp: {x: -21, y: -8}
   z_clamp: {x: -4, y: 1.20000005}
+  isBuzzing: 0
+  x_start: 0
 --- !u!23 &767936217
 Renderer:
   m_ObjectHideFlags: 0
@@ -1144,6 +1228,7 @@ GameObject:
   - 92: {fileID: 987413538}
   - 124: {fileID: 987413537}
   - 81: {fileID: 987413536}
+  - 114: {fileID: 987413541}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1216,6 +1301,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
+--- !u!114 &987413541
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 987413535}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81f12d390a26c449dbc3d465ffbf1efb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1005900311
 GameObject:
   m_ObjectHideFlags: 0
@@ -1299,6 +1395,7 @@ GameObject:
   - 33: {fileID: 1066431665}
   - 23: {fileID: 1066431664}
   - 64: {fileID: 1066431663}
+  - 114: {fileID: 1066431666}
   m_Layer: 0
   m_Name: Buzzer3 Collider
   m_TagString: Untagged
@@ -1360,6 +1457,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 135164946}
   m_GameObject: {fileID: 1066431661}
   m_Mesh: {fileID: 4300006, guid: 660e166dada3f4f119bf78e5d2e92cae, type: 3}
+--- !u!114 &1066431666
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1066431661}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3be7de712c5b440c9a571d90887cc51a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isBuzzing: 0
 --- !u!1 &1097267455
 GameObject:
   m_ObjectHideFlags: 0
@@ -1373,6 +1482,7 @@ GameObject:
   - 23: {fileID: 1097267457}
   - 54: {fileID: 1097267456}
   - 114: {fileID: 1097267461}
+  - 114: {fileID: 1097267462}
   m_Layer: 0
   m_Name: Head
   m_TagString: Untagged
@@ -1459,6 +1569,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hairPiece: {fileID: 11449776, guid: b97410f1156534aabbcb5e3bf4576449, type: 2}
+--- !u!114 &1097267462
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1097267455}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3be7de712c5b440c9a571d90887cc51a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isBuzzing: 0
 --- !u!1 &1182050147
 GameObject:
   m_ObjectHideFlags: 0
@@ -1470,6 +1592,7 @@ GameObject:
   - 33: {fileID: 1182050151}
   - 23: {fileID: 1182050150}
   - 64: {fileID: 1182050149}
+  - 114: {fileID: 1182050152}
   m_Layer: 0
   m_Name: Buzzer1 Collider
   m_TagString: Untagged
@@ -1531,6 +1654,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 135164946}
   m_GameObject: {fileID: 1182050147}
   m_Mesh: {fileID: 4300002, guid: 660e166dada3f4f119bf78e5d2e92cae, type: 3}
+--- !u!114 &1182050152
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1182050147}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3be7de712c5b440c9a571d90887cc51a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isBuzzing: 0
 --- !u!1 &1274322782
 GameObject:
   m_ObjectHideFlags: 0
@@ -1542,6 +1677,7 @@ GameObject:
   - 33: {fileID: 1274322786}
   - 23: {fileID: 1274322785}
   - 64: {fileID: 1274322784}
+  - 114: {fileID: 1274322787}
   m_Layer: 0
   m_Name: Buzzer6 Collider
   m_TagString: Untagged
@@ -1603,6 +1739,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 135164946}
   m_GameObject: {fileID: 1274322782}
   m_Mesh: {fileID: 4300012, guid: 660e166dada3f4f119bf78e5d2e92cae, type: 3}
+--- !u!114 &1274322787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1274322782}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3be7de712c5b440c9a571d90887cc51a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isBuzzing: 0
 --- !u!1 &1279728367
 GameObject:
   m_ObjectHideFlags: 0
@@ -1639,7 +1787,9 @@ MonoBehaviour:
   depth_out_input: rTrigger
   y_clamp: {x: -9, y: 7}
   x_clamp: {x: 3, y: 10}
-  z_clamp: {x: -9, y: -1}
+  z_clamp: {x: -8, y: -2}
+  isBuzzing: 0
+  x_start: 8
 --- !u!54 &1279728369
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1707,7 +1857,7 @@ AudioSource:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1426312451}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_audioClip: {fileID: 8300000, guid: b109c2b15c8534afa8b506b6b4b75f81, type: 3}
   m_PlayOnAwake: 1
@@ -1859,7 +2009,7 @@ GameObject:
   - 64: {fileID: 1859934681}
   - 23: {fileID: 1859934680}
   m_Layer: 0
-  m_Name: Quad
+  m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1967,6 +2117,7 @@ GameObject:
   - 33: {fileID: 2021046246}
   - 23: {fileID: 2021046245}
   - 64: {fileID: 2021046244}
+  - 114: {fileID: 2021046247}
   m_Layer: 0
   m_Name: Buzzer2 Collider
   m_TagString: Untagged
@@ -2028,3 +2179,15 @@ MeshFilter:
   m_PrefabInternal: {fileID: 135164946}
   m_GameObject: {fileID: 2021046242}
   m_Mesh: {fileID: 4300004, guid: 660e166dada3f4f119bf78e5d2e92cae, type: 3}
+--- !u!114 &2021046247
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2021046242}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3be7de712c5b440c9a571d90887cc51a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isBuzzing: 0
