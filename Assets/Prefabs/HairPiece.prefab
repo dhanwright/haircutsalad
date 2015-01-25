@@ -97,6 +97,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ce0d8293e92747e68161767241f5a6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCut: 0
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
