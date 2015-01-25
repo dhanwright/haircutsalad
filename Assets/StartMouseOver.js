@@ -2,6 +2,8 @@
 
 var newSprite : GameObject;
 var currentSpritePosition : Vector3;
+var isOverButton = false;
+
 
 function OnTriggerEnter2D(){
 
@@ -16,10 +18,19 @@ function OnTriggerEnter2D(){
 
   //then make it visible
   newSprite.renderer.enabled = true;
+  
+  isOverButton = true;
 }
 
 function OnTriggerExit2D(){
   //just the reverse process
   renderer.enabled = true;
   newSprite.renderer.enabled = false;
+  isOverButton = false;
 }
+
+function Update(){
+	if (Input.GetButton("A") && isOverButton){
+  		Application.LoadLevel ("controls");
+  		}
+  	}
