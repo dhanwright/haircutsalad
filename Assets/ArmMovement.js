@@ -11,23 +11,23 @@ var z_clamp          = new Vector2(-4, 1.2);
 
 function Update () {
     // Move left and right
-    var horizontal = Input.GetAxis(horizontal_input);
+    var horizontal = Controller.getInput(horizontal_input);
     if(Mathf.Abs(horizontal) > 0.9){
         rigidbody.velocity.x = horizontal * speed;
     }
 
     // Move up and down
-    var vertical = Input.GetAxis(vertical_input);
+    var vertical = Controller.getInput(vertical_input);
     if(Mathf.Abs(vertical) > 0.9){
         rigidbody.velocity.y = vertical * speed;
     }
 
     // Move in and out
-    var depth_out = Input.GetAxis(depth_out_input);
+    var depth_out = Controller.getInput(depth_out_input);
     if (depth_out > 0) {
         rigidbody.AddRelativeForce(Vector3.forward * speed * 1000);
     }
-    var depth_in = Input.GetButton(depth_in_input);
+    var depth_in = Controller.getInput(depth_in_input);
     if (depth_in) {
         rigidbody.AddRelativeForce(Vector3.back * speed * 1000);
     }
