@@ -1,10 +1,10 @@
 ﻿#pragma strict
 
 var speed            = 50;
-var horizontal_input = "RHorizontal";
-var vertical_input   = "RVertical";
-var depth_in_input   = "Depth inR";
-var depth_out_input  = "Depth outR";
+var horizontal_input = "rHorizontal";
+var vertical_input   = "rVertical";
+var depth_in_input   = "rbButton";
+var depth_out_input  = "rTrigger";
 var y_clamp          = new Vector2(-6, 8);
 var x_clamp          = new Vector2(9, 21);
 var z_clamp          = new Vector2(-4, 1.2);
@@ -19,7 +19,7 @@ function Update () {
     // Move up and down
     var vertical = Controller.getInput(vertical_input);
     if(Mathf.Abs(vertical) > 0.9){
-        rigidbody.velocity.y = vertical * speed;
+        rigidbody.velocity.y = -vertical * speed;
     }
 
     // Move in and out
