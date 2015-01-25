@@ -2,6 +2,7 @@
 
 var newSprite : GameObject;
 var currentSpritePosition : Vector3;
+var isOverButton = false;
 
 function OnTriggerEnter2D(){
 
@@ -17,6 +18,8 @@ function OnTriggerEnter2D(){
   //then make it visible
   newSprite.renderer.enabled = true;
   
+   isOverButton = true;
+  
   var audio = GetComponent(AudioSource);
   audio.Play();
 }
@@ -26,3 +29,10 @@ function OnTriggerExit2D(){
   renderer.enabled = true;
   newSprite.renderer.enabled = false;
 }
+
+function Update(){
+	if (Controller.getInput("aButton") && isOverButton){
+  		Application.Quit();
+  		Debug.Log("Quit!");
+  		}
+  	}
