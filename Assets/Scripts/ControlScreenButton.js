@@ -30,7 +30,8 @@ function OnTriggerExit2D(){
 }
 
 function Update(){
-	if (Input.GetButton("Button16") && isOverButton){
+	if (Controller.getInput("aButton") && isOverButton){
   		Application.LoadLevel ("dothedoodoodoo");
+      GameTime.cuttingHair = false;
   		}
   	}
