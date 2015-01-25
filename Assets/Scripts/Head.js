@@ -13,7 +13,7 @@ function Start () {
         generateFlatTop();
     }
 
-    transform.position.y = -1.7;
+    transform.position.y = -9;
 }
 
 function Update () {
@@ -26,8 +26,8 @@ function generateFlatTop() {
     var numberOfObjects = 22;
     var radius_start = 1.7;
     var radius_increment = hairPiece.transform.lossyScale.y;
-    var y_start = 3.4;
-    var y_end = 9;
+    var y_start = 3.6;
+    var y_end = 8;
     var y_increment = (hairPiece.transform.lossyScale.y*0.8);
 
     var numberOfHairs:int = 0;

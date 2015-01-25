@@ -116,7 +116,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 084949051a5024f36bc582000a4e2ed3, type: 2}
+  - {fileID: 2100000, guid: 38a572241b5b249f0be0c2984431d00e, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -340,7 +340,6 @@ MonoBehaviour:
   y_clamp: {x: -6, y: 8}
   x_clamp: {x: 8, y: 21}
   z_clamp: {x: -4, y: 1.20000005}
-  isBuzzing: 0
   x_start: 0
 --- !u!54 &306865287
 Rigidbody:
@@ -461,7 +460,6 @@ MonoBehaviour:
   y_clamp: {x: -6, y: 7}
   x_clamp: {x: -11, y: -6}
   z_clamp: {x: -8, y: 2}
-  isBuzzing: 0
   x_start: -8
 --- !u!54 &313133538
 Rigidbody:
@@ -585,7 +583,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3be7de712c5b440c9a571d90887cc51a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isBuzzing: 0
 --- !u!1 &405870907
 GameObject:
   m_ObjectHideFlags: 0
@@ -818,7 +815,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3be7de712c5b440c9a571d90887cc51a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isBuzzing: 0
 --- !u!1 &533790771
 GameObject:
   m_ObjectHideFlags: 0
@@ -1041,7 +1037,6 @@ MonoBehaviour:
   y_clamp: {x: -6, y: 8}
   x_clamp: {x: -21, y: -8}
   z_clamp: {x: -4, y: 1.20000005}
-  isBuzzing: 0
   x_start: 0
 --- !u!23 &767936217
 Renderer:
@@ -1435,7 +1430,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3be7de712c5b440c9a571d90887cc51a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isBuzzing: 0
 --- !u!1 &1097267455
 GameObject:
   m_ObjectHideFlags: 0
@@ -1471,7 +1465,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 126
-  m_CollisionDetection: 1
+  m_CollisionDetection: 0
 --- !u!23 &1097267457
 Renderer:
   m_ObjectHideFlags: 0
@@ -1519,7 +1513,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1097267455}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: -1.62920685e-07}
-  m_LocalPosition: {x: -1.32000005, y: -8.98999977, z: .370000005}
+  m_LocalPosition: {x: -1.5, y: -5.44999981, z: -.300000012}
   m_LocalScale: {x: 50, y: 50, z: 50}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1547,7 +1541,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3be7de712c5b440c9a571d90887cc51a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isBuzzing: 0
 --- !u!1 &1098424348
 GameObject:
   m_ObjectHideFlags: 0
@@ -1679,7 +1672,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3be7de712c5b440c9a571d90887cc51a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isBuzzing: 0
 --- !u!1 &1261315057
 GameObject:
   m_ObjectHideFlags: 0
@@ -1792,7 +1784,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3be7de712c5b440c9a571d90887cc51a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isBuzzing: 0
 --- !u!1 &1279728367
 GameObject:
   m_ObjectHideFlags: 0
@@ -1831,7 +1822,6 @@ MonoBehaviour:
   y_clamp: {x: -9, y: 7}
   x_clamp: {x: 3, y: 10}
   z_clamp: {x: -8, y: 2}
-  isBuzzing: 0
   x_start: 8
 --- !u!54 &1279728369
 Rigidbody:
@@ -2318,7 +2308,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3be7de712c5b440c9a571d90887cc51a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isBuzzing: 0
 --- !u!1001 &2061529654
 Prefab:
   m_ObjectHideFlags: 0
