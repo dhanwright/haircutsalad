@@ -35,9 +35,5 @@ function Update () {
     transform.position.y = Mathf.Clamp(transform.position.y, y_clamp.x, y_clamp.y);
     transform.position.x = Mathf.Clamp(transform.position.x, x_clamp.x, x_clamp.y);
     transform.position.z = Mathf.Clamp(transform.position.z, z_clamp.x, z_clamp.y);
-    
-    // Clamp rotation
-    var angle = Mathf.Clamp(angle, 0, 0);
-    var rot = transform.rotation;
-	rot = Vector3(angle,angle,90);
+   
 }
