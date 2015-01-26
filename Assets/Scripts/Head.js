@@ -2,6 +2,8 @@
 
 static var hairCount:int;
 static var startHairCount:int;
+static var goalHair:int;
+
 
 function Start () {
    
@@ -12,6 +14,7 @@ function Start () {
     } else {
         generateFlatTop();
     }
+
 
 }
 
