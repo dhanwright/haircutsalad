@@ -11,8 +11,11 @@ static var hairColor:int;
 
 function Start () {
 	
+	var textures : Object[] = Resources.LoadAll("Skin");
+    var texture : Material  = textures[Random.Range(0, 2)];
+	gameObject.renderer.material = texture;
 	
-
+	
     var rand = Random.Range(0,300);
 
     if (rand < 100) {
@@ -27,9 +30,6 @@ function Start () {
     transform.position.y = -9;
     
     hairColor = Random.Range(0,100);
-    
-    Debug.Log(hairColor);
-
 }
 
 function Update () {

@@ -10,4 +10,6 @@ function Update () {
 	if(Application.loadedLevelName == "WinScreen"){
 		audio.Stop();
 		}
+	if(Application.loadedLevelName != "WinScreen" && !audio.isPlaying)
+		audio.Play();
 }

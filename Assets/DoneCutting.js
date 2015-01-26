@@ -1,7 +1,7 @@
 ﻿#pragma strict
 
 function Start () {
-
+	print (Application.loadedLevelName);
 }
 
 function Update () {
