@@ -2,8 +2,12 @@
 
 static var hairCount:int;
 static var startHairCount:int;
+static var hairColor:int;
+
 
 function Start () {
+	
+	
 
     var rand = Random.Range(0,300);
 
@@ -16,6 +20,11 @@ function Start () {
     }
 
     transform.position.y = -9;
+    
+    hairColor = Random.Range(0,100);
+    
+    Debug.Log(hairColor);
+    
 }
 
 function Update () {
