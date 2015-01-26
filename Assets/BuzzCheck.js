@@ -1,6 +1,6 @@
 ﻿#pragma strict
 
-var isBuzzing = false;
+static var isBuzzing = false;
 
 function OnCollisionEnter (col : Collision)
 {

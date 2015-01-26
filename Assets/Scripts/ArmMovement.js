@@ -8,7 +8,6 @@ var depth_out_input  = "rTrigger";
 var y_clamp          = new Vector2(-6, 8);
 var x_clamp          = new Vector2(9, 21);
 var z_clamp          = new Vector2(-8, 2);
-var isBuzzing        = false;
 var x_start          : float;
 
 function Start () {
@@ -47,13 +46,4 @@ function Update () {
         transform.position.z = Mathf.Clamp(transform.position.z, z_clamp.x, z_clamp.y);
     }
 }
-function OnCollisionEnter (col : Collision)
-{
-    if(col.gameObject.name == "HairPiece" || col.gameObject.name == "Head")
-    {
-        isBuzzing = true;
-    }
-}
-function OnCollisionExit(){
-	isBuzzing = false;
-}
+
