@@ -28,6 +28,7 @@ function OnTriggerExit2D(){
   //just the reverse process
   renderer.enabled = true;
   newSprite.renderer.enabled = false;
+  isOverButton = false;
 }
 
 function Update(){
